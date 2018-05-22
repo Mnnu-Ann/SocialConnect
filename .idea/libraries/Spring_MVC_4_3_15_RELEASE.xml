@@ -1,0 +1,49 @@
+<component name="libraryTable">
+  <library name="Spring MVC-4.3.15.RELEASE" type="spring-mvc">
+    <properties version="4.3.15.RELEASE" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spring-webmvc-portlet-4.3.15.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-websocket-4.3.15.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.15.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-web-4.3.15.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/jars/restfb-1.5.jar!/" />
+      <root url="jar://$USER_HOME$/jars/javax.servlet.jar!/" />
+      <root url="jar://$USER_HOME$/jars/aopalliance-1.0.jar!/" />
+      <root url="jar://$USER_HOME$/jars/apache-commons-codec-1.3.jar!/" />
+      <root url="jar://$USER_HOME$/jars/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/jars/java-json.jar!/" />
+      <root url="jar://$USER_HOME$/jars/json-simple-1.1.jar!/" />
+      <root url="jar://$USER_HOME$/jars/spring-webmvc-3.1.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/aopalliance-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-aop-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-aspects-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-beans-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-context-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-context-support-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-core-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-expression-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-instrument-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-instrument-tomcat-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-jdbc-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-jms-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-messaging-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-orm-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-oxm-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-test-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-tx-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-web-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-webmvc-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-webmvc-portlet-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../test/lib/spring-websocket-4.3.14.RELEASE.jar!/" />
+      <root url="jar://$USER_HOME$/jars/twitter4j-core-4.0.6.jar!/" />
+      <root url="jar://$USER_HOME$/jars/jstl-1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/log4j-1.2.16.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/jars/restfb-1.5.jar!/" />
+      <root url="jar://$USER_HOME$/jars/java-json.jar!/" />
+    </SOURCES>
+  </library>
+</component>
