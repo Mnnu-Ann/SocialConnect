@@ -23,18 +23,17 @@ public class SocialNetworkController {
 
 
     @RequestMapping("/shareOnSocialMedia")
-    public ModelAndView postOnSocialMedia(@RequestParam("message") String message, HttpServletRequest req , HttpServletResponse res)
-    {
+    public ModelAndView postOnSocialMedia(@RequestParam("message") String message, HttpServletRequest req, HttpServletResponse res) {
         ModelAndView mvObj = new ModelAndView("index");
         try {
-            AccessToken accessTokenForTwitter= (AccessToken) req.getSession().getAttribute("accessTokenForTwitter");
-            if(accessTokenForTwitter != null) {
+            AccessToken accessTokenForTwitter = (AccessToken) req.getSession().getAttribute("accessTokenForTwitter");
+            if (accessTokenForTwitter != null) {
                 TwitterSourceData twitterSourceDataObj = new TwitterSourceData();
                 Boolean flag = twitterSourceDataObj.post(accessTokenForTwitter, message);
             }
 
             String accessTokenForFacebook = (String) req.getSession().getAttribute("accessTokenForFacebook");
-            if(accessTokenForFacebook != null) {
+            if (accessTokenForFacebook != null) {
                 FacebookSourceData facebookSourceDataObj = new FacebookSourceData();
                 Boolean flag = facebookSourceDataObj.post(accessTokenForFacebook, message);
             }
@@ -46,13 +45,13 @@ public class SocialNetworkController {
     }
 
     @RequestMapping("/result")
-    public ModelAndView viewAnalysis(HttpServletRequest req , HttpServletResponse res) throws TwitterException {
+    public ModelAndView viewAnalysis(HttpServletRequest req, HttpServletResponse res) throws TwitterException {
 
         ModelAndView mvObj = new ModelAndView("index");
         Set years = new TreeSet();
         req.getSession().setAttribute("viewAnalysisClicked", true);
-        AccessToken accessTokenForTwitter= (AccessToken) req.getSession().getAttribute("accessTokenForTwitter");
-        if(accessTokenForTwitter != null) {
+        AccessToken accessTokenForTwitter = (AccessToken) req.getSession().getAttribute("accessTokenForTwitter");
+        if (accessTokenForTwitter != null) {
             TwitterSourceData twitterSourceDataObj = new TwitterSourceData();
             List<Bean> twitterPostsList = twitterSourceDataObj.getPosts(accessTokenForTwitter.getToken(), accessTokenForTwitter.getTokenSecret());
             TwitterAnalyzer twitterAnalyzerObj = new TwitterAnalyzer();
@@ -64,12 +63,12 @@ public class SocialNetworkController {
                 twPostList.add(m.getValue());
             }
             years.addAll(twYearList);
-            mvObj.addObject("twMap",twitterMap);
-            mvObj.addObject("TwitteryearList",twYearList);
-            mvObj.addObject("TwitterpostsList",twPostList);
+            mvObj.addObject("twMap", twitterMap);
+            mvObj.addObject("TwitteryearList", twYearList);
+            mvObj.addObject("TwitterpostsList", twPostList);
         }
-        String accessTokenForFacebook= (String) req.getSession().getAttribute("accessTokenForFacebook");
-        if(accessTokenForFacebook != null) {
+        String accessTokenForFacebook = (String) req.getSession().getAttribute("accessTokenForFacebook");
+        if (accessTokenForFacebook != null) {
             FacebookSourceData facebookSourceDataObj = new FacebookSourceData();
             List<Bean> facebookPosts = facebookSourceDataObj.getPosts(accessTokenForFacebook, "");
             FacebookAnalyzer facebookAnalyzerObj = new FacebookAnalyzer();

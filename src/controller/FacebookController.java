@@ -20,7 +20,7 @@ import java.util.TreeMap;
 @Controller
 public class FacebookController {
     @RequestMapping("/FriendList")
-    public ModelAndView getCode(@RequestParam("code") String code, HttpServletRequest req , HttpServletResponse res) throws Exception {
+    public ModelAndView getCode(@RequestParam("code") String code, HttpServletRequest req, HttpServletResponse res) throws Exception {
         ModelAndView mvObj = new ModelAndView("index");
 
         FacebookSourceData facebookSourceDataObj = new FacebookSourceData();

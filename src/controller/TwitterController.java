@@ -23,14 +23,13 @@ import java.util.TreeMap;
 @Controller
 public class TwitterController {
     @RequestMapping("/twitter")
-    public ModelAndView getCodeForTwitter(HttpServletRequest req , HttpServletResponse res)
-    {
+    public ModelAndView getCodeForTwitter(HttpServletRequest req, HttpServletResponse res) {
         ModelAndView mvObj = new ModelAndView("index");
         try {
             RequestToken requestToken = (RequestToken) req.getSession().getAttribute("requestToken");
             TwitterSourceData twitterSourceDataObj = new TwitterSourceData();
             String oauthVerifier = req.getParameter("oauth_verifier");
-            AccessToken accessToken = twitterSourceDataObj.generateAccessToken(requestToken,oauthVerifier);
+            AccessToken accessToken = twitterSourceDataObj.generateAccessToken(requestToken, oauthVerifier);
             req.getSession().setAttribute("accessTokenForTwitter", accessToken);
 
         } catch (Exception e) {
